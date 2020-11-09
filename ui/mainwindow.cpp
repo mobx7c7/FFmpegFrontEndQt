@@ -24,7 +24,6 @@ MainWindow::MainWindow(QWidget *parent)
 
     // Command line
 
-    ui->textEdit_2->setText("ffmpeg.exe -hide_banner -version");
     m_CmdProcess.setProcessChannelMode(QProcess::MergedChannels);
 
     connect(ui->pushButton_3,
@@ -59,6 +58,13 @@ MainWindow::MainWindow(QWidget *parent)
             SLOT(handleRebuildCmdLine()));
 
     m_CmdLineRebuildTimer.setSingleShot(true);
+
+    // Test
+
+    connect(ui->pushButton_4, &QPushButton::clicked, [&](){
+        ui->textEdit_2->setText("ffmpeg.exe -hide_banner -version");
+        handleRunProcess();
+    });
 }
 
 MainWindow::~MainWindow()
