@@ -12,16 +12,19 @@ SOURCES += \
     main.cpp \
     ui/fieldwidget.cpp \
     ui/filefieldwidget.cpp \
-    ui/formatfieldwidget.cpp
+    ui/formatfieldwidget.cpp \
+    ui/mainwindow.cpp
 
 HEADERS += \
     ui/fieldwidget.h \
     ui/filefieldwidget.h \
-    ui/formatfieldwidget.h
+    ui/formatfieldwidget.h \
+    ui/mainwindow.h
 
 FORMS += \
     ui/filefieldwidget.ui \
-    ui/formatfieldwidget.ui
+    ui/formatfieldwidget.ui \
+    ui/mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
