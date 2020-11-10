@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AudioFormatFieldWidget</class>
+ <widget class="QWidget" name="AudioFormatFieldWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>318</width>
+    <height>109</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="1" column="2">
+    <widget class="QLabel" name="label_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Codec</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QLineEdit" name="lineEdit_2"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Other opts</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Channel Format</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QComboBox" name="comboBox"/>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="label_7">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Bitrate</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QSpinBox" name="spinBox">
+     <property name="suffix">
+      <string/>
+     </property>
+     <property name="prefix">
+      <string/>
+     </property>
+     <property name="minimum">
+      <number>-1</number>
+     </property>
+     <property name="maximum">
+      <number>999999999</number>
+     </property>
+     <property name="value">
+      <number>-1</number>
+     </property>
+     <property name="displayIntegerBase">
+      <number>10</number>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QSpinBox" name="spinBox_2">
+     <property name="minimum">
+      <number>-1</number>
+     </property>
+     <property name="maximum">
+      <number>256</number>
+     </property>
+     <property name="value">
+      <number>-1</number>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Sample Format</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Format</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QLabel" name="label_5">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Channel Count</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QComboBox" name="comboBox_2">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QLabel" name="label_3">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Sample Rate</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QSpinBox" name="spinBox_3">
+     <property name="prefix">
+      <string/>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>999999999</number>
+     </property>
+     <property name="value">
+      <number>128000</number>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="lineEdit_3"/>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>lineEdit_2</tabstop>
+  <tabstop>lineEdit_3</tabstop>
+  <tabstop>spinBox_3</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>spinBox</tabstop>
+  <tabstop>comboBox_2</tabstop>
+  <tabstop>spinBox_2</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>AudioFormatFieldWidget</receiver>
+   <slot>handleChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>10</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>54</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_2</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>AudioFormatFieldWidget</receiver>
+   <slot>handleChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>277</x>
+     <y>10</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>54</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_3</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>AudioFormatFieldWidget</receiver>
+   <slot>handleChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>54</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>AudioFormatFieldWidget</receiver>
+   <slot>handleChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>277</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>54</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>AudioFormatFieldWidget</receiver>
+   <slot>handleChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>277</x>
+     <y>97</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>54</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>AudioFormatFieldWidget</receiver>
+   <slot>handleChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>277</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>54</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>AudioFormatFieldWidget</receiver>
+   <slot>handleChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>67</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>54</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_2</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>AudioFormatFieldWidget</receiver>
+   <slot>handleChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>54</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>handleChanged()</slot>
+ </slots>
+</ui>

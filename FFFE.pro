@@ -10,21 +10,27 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
+    ui/audioformatfieldwidget.cpp \
     ui/fieldwidget.cpp \
     ui/filefieldwidget.cpp \
     ui/formatfieldwidget.cpp \
     ui/mainwindow.cpp
+    ui/videoformatfieldwidget.cpp
 
 HEADERS += \
+    ui/audioformatfieldwidget.h \
     ui/fieldwidget.h \
     ui/filefieldwidget.h \
     ui/formatfieldwidget.h \
     ui/mainwindow.h
+    ui/videoformatfieldwidget.h
 
 FORMS += \
+    ui/audioformatfieldwidget.ui \
     ui/filefieldwidget.ui \
     ui/formatfieldwidget.ui \
     ui/mainwindow.ui
+    ui/videoformatfieldwidget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
