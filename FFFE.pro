@@ -14,7 +14,8 @@ SOURCES += \
     ui/fieldwidget.cpp \
     ui/filefieldwidget.cpp \
     ui/formatfieldwidget.cpp \
-    ui/mainwindow.cpp
+    ui/mainwindow.cpp \
+    ui/toolboxwidget.cpp \
     ui/videoformatfieldwidget.cpp
 
 HEADERS += \
@@ -22,14 +23,16 @@ HEADERS += \
     ui/fieldwidget.h \
     ui/filefieldwidget.h \
     ui/formatfieldwidget.h \
-    ui/mainwindow.h
+    ui/mainwindow.h \
+    ui/toolboxwidget.h \
     ui/videoformatfieldwidget.h
 
 FORMS += \
     ui/audioformatfieldwidget.ui \
     ui/filefieldwidget.ui \
     ui/formatfieldwidget.ui \
-    ui/mainwindow.ui
+    ui/mainwindow.ui \
+    ui/toolboxwidget.ui \
     ui/videoformatfieldwidget.ui
 
 # Default rules for deployment.
