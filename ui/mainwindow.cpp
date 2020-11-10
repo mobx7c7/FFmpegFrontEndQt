@@ -84,7 +84,7 @@ void MainWindow::addFieldWidget(FieldWidget* widget)
     layout0->addWidget(widget);
 
     auto groupBox0 = new QGroupBox();
-    groupBox0->setTitle(widget->objectName());
+    groupBox0->setTitle(widget->label());
     groupBox0->setLayout(layout0);
 
     auto scrollArea = ui->groupBox->findChild<QScrollArea*>();
@@ -94,7 +94,7 @@ void MainWindow::addFieldWidget(FieldWidget* widget)
     connect(widget, SIGNAL(changed()), this, SLOT(handleFieldChanged()));
     {
         QTreeWidgetItem *newTreeItem = new QTreeWidgetItem();
-        newTreeItem->setText(0, widget->objectName());
+        newTreeItem->setText(0, groupBox0->title());
         newTreeItem->setData(0, Qt::UserRole, QVariant::fromValue<QGroupBox*>(groupBox0));
 
         QTreeWidget *tree = ui->treeWidget;

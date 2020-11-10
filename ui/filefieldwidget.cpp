@@ -20,16 +20,21 @@ FileFieldWidget::FileFieldWidget(QWidget *parent, QFileDialog::AcceptMode accept
     m_FileDialog.setAcceptMode(acceptMode);
     m_FileDialog.setAcceptDrops(false);
 
+    QString label;
+
     if(acceptMode == QFileDialog::AcceptOpen)
     {
-        m_FileDialog.setWindowTitle("Input file");
-        setObjectName("FileInputField");
+        label = "Input file";
     }
     else
     {
-        m_FileDialog.setWindowTitle("Output file");
-        setObjectName("FileOutputField");
+        label = "Output file";
     }
+
+    Q_ASSERT(!label.isEmpty());
+
+    setLabel(label);
+    m_FileDialog.setWindowTitle(label);
 }
 
 FileFieldWidget::~FileFieldWidget()

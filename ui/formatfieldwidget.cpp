@@ -11,7 +11,7 @@ FormatFieldWidget::FormatFieldWidget(QWidget *parent) :
             SIGNAL(textEdited(const QString&)), this,
             SLOT(handleTextEdited(const QString&)));
 
-    setObjectName("FormatField");
+    setLabel("Custom format");
 }
 
 void FormatFieldWidget::handleTextEdited(const QString& text)
