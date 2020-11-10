@@ -17,6 +17,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void addFieldWidget(FieldWidget*);
 
 private:
     Ui::MainWindow *ui;
@@ -24,7 +25,6 @@ private:
     QTimer m_CmdLineRebuildTimer;
 
     void enableInputs(bool);
-    void addFieldWidget(FieldWidget*);
     void notifyFieldChanged();
 
 private slots:
@@ -34,8 +34,6 @@ private slots:
     void handleProcessReadStdOut();
     void handleRebuildCmdLine();
     void handleFieldChanged();
-    void handleInsertFileInputField();
-    void handleInsertFileOutputField();
-    void handleInsertFormatField();
+    void handleFieldAlloc(FieldWidget*);
 };
 #endif // MAINWINDOW_H

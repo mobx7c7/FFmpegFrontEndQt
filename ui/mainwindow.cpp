@@ -39,18 +39,6 @@ MainWindow::MainWindow(QWidget *parent)
             SIGNAL(readyReadStandardOutput()), this,
             SLOT(handleProcessReadStdOut()));
 
-    // Options insert buttons
-
-    connect(ui->pushButton_5, // File input
-            SIGNAL(clicked()), this,
-            SLOT(handleInsertFileInputField()));
-    connect(ui->pushButton_6, // File output
-            SIGNAL(clicked()), this,
-            SLOT(handleInsertFileOutputField()));
-    connect(ui->pushButton_8, // Format
-            SIGNAL(clicked()), this,
-            SLOT(handleInsertFormatField()));
-
     // Timer
 
     connect(&m_CmdLineRebuildTimer,
@@ -176,20 +164,9 @@ void MainWindow::handleFieldChanged()
     notifyFieldChanged();
 }
 
-void MainWindow::handleInsertFileInputField()
+void MainWindow::handleFieldAlloc(FieldWidget *widget)
 {
-    auto widget = new FileFieldWidget(nullptr, QFileDialog::AcceptOpen);
-    addFieldWidget(widget);
-}
-
-void MainWindow::handleInsertFileOutputField()
-{
-    auto widget = new FileFieldWidget(nullptr, QFileDialog::AcceptSave);
-    addFieldWidget(widget);
-}
-
-void MainWindow::handleInsertFormatField()
-{
-    auto widget = new FormatFieldWidget();
+    qDebug() << "FieldAlloc";
+    qDebug() << sender() << sender()->objectName();
     addFieldWidget(widget);
 }
