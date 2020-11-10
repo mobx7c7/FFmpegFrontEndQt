@@ -10,7 +10,12 @@ protected:
     FieldWidget(QWidget* parent);
 
 public:
+    QString label(){return m_Label;}
+    void setLabel(const QString& label){m_Label = label;}
     virtual QString toString() { return QString(); }
+
+private:
+    QString m_Label;
 
 signals:
     void changed();
