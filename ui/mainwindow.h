@@ -6,6 +6,10 @@
 #include <QTimer>
 #include <ui/fieldwidget.h>
 
+#include <QMutexLocker>
+
+#include <cliprocess.h>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -21,17 +25,20 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    QProcess m_CmdProcess;
+    CLIProcess m_CliProcess;
     QTimer m_CmdLineRebuildTimer;
+    QTimer m_ConsoleRepaintTimer;
+    QMutex m_ConsoleMutex;
 
     void enableInputs(bool);
     void notifyFieldChanged();
 
 private slots:
     void handleRunProcess();
-    void handleProcessStarted();
-    void handleProcessFinished(int, QProcess::ExitStatus);
-    void handleProcessReadStdOut();
+    void handleConsoleLine(const QString&);
+    void handleConsoleStarted();
+    void handleConsoleFinished();
+    void handleConsoleRepaint();
     void handleRebuildCmdLine();
     void handleFieldChanged();
     void handleFieldAlloc(FieldWidget*);

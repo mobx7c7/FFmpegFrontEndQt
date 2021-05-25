@@ -15,7 +15,6 @@ FileFieldWidget::FileFieldWidget(QWidget *parent, QFileDialog::AcceptMode accept
             SIGNAL(textEdited(const QString&)), this,
             SLOT(handleTextEdited(const QString&)));
 
-    //m_FileDialog.setDirectory("C:\\");
     m_FileDialog.setFileMode(QFileDialog::AnyFile);
     m_FileDialog.setAcceptMode(acceptMode);
     m_FileDialog.setAcceptDrops(false);

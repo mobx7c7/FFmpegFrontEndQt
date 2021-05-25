@@ -14,7 +14,7 @@ FormatFieldWidget::FormatFieldWidget(QWidget *parent) :
     setLabel("Custom format");
 }
 
-void FormatFieldWidget::handleTextEdited(const QString& text)
+void FormatFieldWidget::handleTextEdited(const QString&)
 {
     emit changed();
 }
